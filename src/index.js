@@ -11,7 +11,7 @@ app.use(authRoutes);
 
 const dbUser = process.env.DB_USER;
 const dbPassword = process.env.DB_PASS;
-const mongoUri = `mongodb+srv://${dbUser}:${dbPassword}@cluster0.mtymp.mongodb.net/<dbname>?retryWrites=true&w=majority`;
+const mongoUri = `mongodb+srv://${dbUser}:${dbPassword}@cluster0.mtymp.mongodb.net/test?retryWrites=true&w=majority`;
 mongoose.connect(mongoUri, {
   useNewUrlParser: true,
   useCreateIndex: true,
