@@ -1,7 +1,9 @@
 const express = require('express');
 const mongoose = require('mongoose');
+const authRoutes = require('./routes/authRoutes');
 
 const app = express();
+app.use(authRoutes);
 
 const dbUser = process.env.DB_USER;
 const dbPassword = process.env.DB_PASS;
